@@ -20,7 +20,7 @@
         </div>
          <!-- User Navigation: Login/Profile/Logout links will be managed by auth.js -->
         <nav class="user-nav">
-            <a href="profile.html" id="profile-link" class="nav-link" style="display: none;">My Profile</a>
+            <a href="userprofilepage.html" id="profile-link" class="nav-link" style="display: none;">My Profile</a>
             <a href="login.html" id="login-link" class="nav-link">Login</a>
             <button id="logout-button" class="nav-link" style="display: none;">Logout</button>
         </nav>
@@ -33,105 +33,206 @@
     
     <main class="portal-container">
         <h2 class="category-title">All Available Exams</h2>
-        <div class="exam-grid">
+        <div class="exam-grid" id="exam-grid">
             
-            <div class="exam-card">
+            <div class="exam-card" data-title="Anaesthesia">
                 <h3>Anaesthesia</h3>
                 <p>A comprehensive test on the principles and practices of anaesthesia.</p>
                 <a href="testlink/prepx_Anaesthesia.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Anatomy">
                 <h3>Anatomy</h3>
                 <p>Assess your knowledge of the human body structure and systems.</p>
                 <a href="testlink/prepx_Anatomy.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Biochemistry">
                 <h3>Biochemistry</h3>
                 <p>Test your understanding of chemical processes within living organisms.</p>
                 <a href="testlink/prepx_Biochemistry.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Dermatology">
                 <h3>Dermatology</h3>
                 <p>A test focusing on the skin, its structure, functions, and diseases.</p>
                 <a href="testlink/prepx_Dermatology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="ENT">
                 <h3>ENT</h3>
                 <p>Exam covering conditions of the ear, nose, and throat.</p>
                 <a href="testlink/prepx_ENT.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Forensic Medicine">
                 <h3>Forensic Medicine</h3>
                 <p>Assess your knowledge of medicine as it applies to the law.</p>
                 <a href="testlink/prepx_Forensic_Medicine.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Gynaecology Obstetrics">
                 <h3>Gynaecology & Obstetrics</h3>
                 <p>Test on female reproductive health, pregnancy, and childbirth.</p>
                 <a href="testlink/prepx_Gynaecology__Obstetrics.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Medicine">
                 <h3>Medicine</h3>
                 <p>A general test on the practice of internal medicine and diagnostics.</p>
                 <a href="testlink/prepx_Medicine.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Ophthalmology">
                 <h3>Ophthalmology</h3>
                 <p>A test focusing on the anatomy, physiology, and diseases of the eye.</p>
                 <a href="testlink/prepx_Ophthalmology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Orthopaedics">
                 <h3>Orthopaedics</h3>
                 <p>Covers the musculoskeletal system, including bones, joints, and ligaments.</p>
                 <a href="testlink/prepx_Orthopaedics.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Pathology">
                 <h3>Pathology</h3>
                 <p>This test focuses on the cause and effect of disease.</p>
                 <a href="testlink/prepx_Pathology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Pediatrics">
                 <h3>Pediatrics</h3>
                 <p>Assess your knowledge in the medical care of infants, children, and adolescents.</p>
                 <a href="testlink/prepx_Pediatrics.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Pharmacology">
                 <h3>Pharmacology</h3>
                 <p>This test covers the uses, effects, and modes of action of drugs.</p>
                 <a href="testlink/prepx_Pharmacology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Physiology">
                 <h3>Physiology</h3>
                 <p>A fundamental test on the normal functions of living organisms.</p>
                 <a href="testlink/prepx_Physiology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="PSM">
                 <h3>PSM</h3>
                 <p>Test on Preventive and Social Medicine and community health.</p>
                 <a href="testlink/prepx_PSM.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Psychiatry">
                 <h3>Psychiatry</h3>
                 <p>Assess your knowledge of mental disorders and their diagnosis.</p>
                 <a href="testlink/prepx_Psychiatry.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Radiology">
                 <h3>Radiology</h3>
                 <p>A test on medical imaging to diagnose and treat diseases.</p>
                 <a href="testlink/prepx_Radiology.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
-            <div class="exam-card">
+            <div class="exam-card" data-title="Surgery">
                 <h3>Surgery</h3>
                 <p>A fundamental test on pre-operative and post-operative care principles.</p>
                 <a href="testlink/prepx_Surgery.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
             </div>
         </div>
+
+        <!-- NEW SECTION FOR PREVIOUS YEAR QUESTIONS -->
+        <h2 class="category-title">Previous Year Questions (PYQ)</h2>
+        <div class="exam-grid">
+            <div class="exam-card" data-title="Anatomy (PYQ)">
+                <h3>Anatomy (PYQ)</h3>
+                <p>Practice with previous year questions on human anatomy.</p>
+                <a href="testlink/anant_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Anaesthesia (PYQ)">
+                <h3>Anaesthesia (PYQ)</h3>
+                <p>Practice with previous year questions on anaesthesia.</p>
+                <a href="testlink/anesthesia_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Biochemistry (PYQ)">
+                <h3>Biochemistry (PYQ)</h3>
+                <p>Practice with previous year questions on biochemistry.</p>
+                <a href="testlink/biochem_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Dermatology (PYQ)">
+                <h3>Dermatology (PYQ)</h3>
+                <p>Practice with previous year questions on dermatology.</p>
+                <a href="testlink/derma_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="ENT (PYQ)">
+                <h3>ENT (PYQ)</h3>
+                <p>Practice with previous year questions on ENT.</p>
+                <a href="testlink/ent_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Forensic Medicine (PYQ)">
+                <h3>Forensic Medicine (PYQ)</h3>
+                <p>Practice with previous year questions on forensic medicine.</p>
+                <a href="testlink/fmt_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+             <div class="exam-card" data-title="Microbiology (PYQ)">
+                <h3>Microbiology (PYQ)</h3>
+                <p>Practice with previous year questions on microbiology.</p>
+                <a href="testlink/micro_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Medicine (PYQ)">
+                <h3>Medicine (PYQ)</h3>
+                <p>Practice with previous year questions on general medicine.</p>
+                <a href="testlink/medicine_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Gynaecology & Obstetrics (PYQ)">
+                <h3>Gynaecology & Obstetrics (PYQ)</h3>
+                <p>Practice with previous year questions on OBG.</p>
+                <a href="testlink/obg_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Ophthalmology (PYQ)">
+                <h3>Ophthalmology (PYQ)</h3>
+                <p>Practice with previous year questions on ophthalmology.</p>
+                <a href="testlink/ophth_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Orthopaedics (PYQ)">
+                <h3>Orthopaedics (PYQ)</h3>
+                <p>Practice with previous year questions on orthopaedics.</p>
+                <a href="testlink/ortho_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Pathology (PYQ)">
+                <h3>Pathology (PYQ)</h3>
+                <p>Practice with previous year questions on pathology.</p>
+                <a href="testlink/patho_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Pediatrics (PYQ)">
+                <h3>Pediatrics (PYQ)</h3>
+                <p>Practice with previous year questions on pediatrics.</p>
+                <a href="testlink/pedia_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Pharmacology (PYQ)">
+                <h3>Pharmacology (PYQ)</h3>
+                <p>Practice with previous year questions on pharmacology.</p>
+                <a href="testlink/pharma_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Physiology (PYQ)">
+                <h3>Physiology (PYQ)</h3>
+                <p>Practice with previous year questions on physiology.</p>
+                <a href="testlink/physio_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="PSM (PYQ)">
+                <h3>PSM (PYQ)</h3>
+                <p>Practice with previous year questions on PSM.</p>
+                <a href="testlink/psm_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Psychiatry (PYQ)">
+                <h3>Psychiatry (PYQ)</h3>
+                <p>Practice with previous year questions on psychiatry.</p>
+                <a href="testlink/psyc_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Radiology (PYQ)">
+                <h3>Radiology (PYQ)</h3>
+                <p>Practice with previous year questions on radiology.</p>
+                <a href="testlink/radio_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+            <div class="exam-card" data-title="Surgery (PYQ)">
+                <h3>Surgery (PYQ)</h3>
+                <p>Practice with previous year questions on surgery.</p>
+                <a href="testlink/surgery_pyq.html" class="start-button" target="_blank" rel="noopener noreferrer">Start Test</a>
+            </div>
+        </div>
     </main>
 
-    <!-- This script handles the search bar -->
-    <script src="script.js"></script>
-    <!-- This new script handles all user authentication logic -->
+    <!-- Import JavaScript files -->
+    <!-- These MUST be type="module" to use ES6 imports in Firebase v9+ -->
     <script type="module" src="auth.js"></script>
+    <script type="module" src="script.js"></script>
+
 </body>
 </html>
 
